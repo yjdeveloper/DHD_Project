@@ -15,7 +15,7 @@ import progressbar
 # Path to the output folder
 Folder_name = "Dilated/"
 
-filenames = [img for img in glob.glob("Thresholded/*.jpg")]
+filenames = [img for img in glob.glob("Dataset/*.jpg")]
 filenames =  natsorted(filenames)
 
 print("[INFO] dilation started...")

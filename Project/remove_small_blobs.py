@@ -100,7 +100,7 @@ for file in progressbar.progressbar(filenames):
 	for c in cnts:
 		cnt_area = cv.contourArea(c)
 		# print(cnt_area)
-		if cnt_area <=  500:
+		if cnt_area <=  1000:
 			(x, y, w, h) = cv.boundingRect(c)
 			thresh[y:y + h, x:x + w] = 0
 			cv.imwrite(Folder_name+filename+'.jpg', thresh)
